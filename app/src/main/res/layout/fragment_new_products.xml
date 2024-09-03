@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.NewProductsFragment">
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/new_products_img"
+            android:layout_width="400dp"
+            android:layout_height="300dp"
+            android:src="@mipmap/newproducts"
+            android:layout_marginTop="100dp"/>
+
+        <TextView
+            android:textSize="24sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sorry There Is No New Product Yet"
+            android:layout_below="@id/new_products_img"
+            android:fontFamily="@font/alata"
+            android:textColor="@color/purple_700"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

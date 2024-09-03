@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape"
+    android:orientation="vertical"
+    tools:context=".activities.LoginActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="218dp"
+        app:cardElevation="20dp"
+        android:layout_marginVertical="25dp"
+        android:layout_marginHorizontal="11dp"
+        app:cardCornerRadius="20dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/rashan"
+            tools:ignore="ContentDescription,VisualLintBounds" />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <TextView
+        android:id="@+id/txtwelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/alata"
+        android:text="Welcome To Quick Grocer!"
+        android:textSize="25sp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/etemaillogin"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtwelcome"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/account"
+        android:drawablePadding="13dp"
+        android:ems="10"
+        android:fontFamily="@font/alata"
+        android:hint="Email"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:padding="13dp"
+        android:textColor="#888887"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/etpasswordlogin"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etemaillogin"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/keylog"
+        android:drawablePadding="13dp"
+        android:ems="10"
+        android:fontFamily="@font/alata"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:padding="13dp"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/txtforgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:fontFamily="@font/alata"
+        android:layout_below="@id/etpasswordlogin"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtforgot"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#4AE651"
+        android:fontFamily="@font/alata"
+        android:padding="14dp"
+        android:text="Login"
+        android:textSize="14sp"
+        tools:ignore="TextContrastCheck" />
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressbar"
+        android:layout_below="@id/btnlogin"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtregister"
+        android:text="Not Registered Yet? REGISTER NOW !"
+        android:layout_below="@id/progressbar"
+        android:fontFamily="@font/alata"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btnregister"
+        android:layout_width="300dp"
+        android:layout_height="58dp"
+        android:layout_below="@id/txtregister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#4AE651"
+        android:fontFamily="@font/alata"
+        android:text="Sign Up"
+        android:textSize="17sp"
+        tools:ignore="TextContrastCheck" />
+
+</RelativeLayout>
